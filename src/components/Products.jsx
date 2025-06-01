@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { products, categories } from '../data'
+import { products, categories } from '../Data'
 
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState('all')
