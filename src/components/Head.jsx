@@ -3,30 +3,30 @@ import bed from '../assets/bed.jpg'
 
 function Head() {
   return (
-    <div className="relative h-screen w-full">
-      {/* Fixed Background */}
+    <div className="relative min-h-screen w-full overflow-hidden">
+      {/* Background Image */}
       <div 
-        className="fixed inset-0 w-full h-screen bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bed})` }}
       >
         <div className="absolute inset-0 bg-[#0f1118]/40"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
-        <div className="max-w-4xl">
-          <h1 className="text-8xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 font-playfair italic">
+      <div className="relative z-10 h-full flex items-center justify-center text-center px-4 py-20">
+        <div className="max-w-4xl w-full">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 font-playfair italic">
             France
           </h1>
-          <p className="text-2xl text-gray-300 mb-12 font-playfair">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 md:mb-12 font-playfair">
             Elegant furniture for your home.<br />
             Quality meets style in every detail.
           </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-lg font-playfair transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 transform hover:scale-105">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <button className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-base md:text-lg font-playfair transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 transform hover:scale-105">
               Browse Products
             </button>
-            <button className="px-8 py-4 bg-[#1a1c25] text-white rounded-full text-lg font-playfair transition-all duration-300 hover:bg-[#252730] transform hover:scale-105">
+            <button className="px-6 md:px-8 py-3 md:py-4 bg-[#1a1c25] text-white rounded-full text-base md:text-lg font-playfair transition-all duration-300 hover:bg-[#252730] transform hover:scale-105">
               Contact Us
             </button>
           </div>
